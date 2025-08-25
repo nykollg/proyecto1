@@ -46,28 +46,36 @@
     background-color: #f4978e;
 }
 
-.primeros{
-    display: flex;
-    justify-content: center; /*centrar horizontalmente*/
-    gap: 10px; /*espacio entre imagenes*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  gap: 20px; /* espacio entre productos */
+  padding: 20px;
+  justify-items: center; /* centra cada item */
 }
 
-.primeros img{
-    width: 22%;
-    height: auto;
-    padding-top: 10px;
+.item {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
-.blushanik{
-    display: unset;
-    
+.item img {
+  width: 100%; 
+  max-width: 200px; /* tamaño máximo para uniformidad */
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
 }
 
-h6{
-    font-size: 1rem;
-    font-weight: normal;
-    font-style: normal;
-    color: #F08080;
-    margin: 0;
-    padding: 0;
+.nombre {
+  font-size: 16px;
+  margin: 8px 0 4px;
+  margin-bottom: 0.5px;
+}
+
+.precio {
+  font-size: 12px;
+  font-weight: bold;
+  color: #F08080;
+  margin-top: 0.5px;; /*poner mas cerca al título*/
 }
