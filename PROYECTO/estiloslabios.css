@@ -1,0 +1,40 @@
+.encabezado{
+    text-align: center;
+    color: black; 
+    font-family: "Bodoni Moda SC", serif; /*rgb(220, 190, 123) */
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-style: normal;
+    display: flex; /*poner texto e imagen al lado*/
+    justify-content: center; /*poner centrado*/
+
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.item{
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.item img{
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.precio {
+  font-size: 18px;
+  font-weight: bold;
+  color: #F08080;
+}
