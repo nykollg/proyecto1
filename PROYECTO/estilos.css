@@ -57,3 +57,17 @@
     height: auto;
     padding-top: 10px;
 }
+
+.blushanik{
+    display: unset;
+    
+}
+
+h6{
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: normal;
+    color: #F08080;
+    margin: 0;
+    padding: 0;
+}
