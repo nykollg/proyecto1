@@ -1,0 +1,59 @@
+.encabezado{
+    text-align: center;
+    color: black; 
+    font-family: "Bodoni Moda SC", serif; /*rgb(220, 190, 123) */
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-style: normal;
+    display: flex; /*poner texto e imagen al lado*/
+    justify-content: center; /*poner centrado*/
+
+}
+
+#logo{
+    max-width: 15%;
+    height: 15%;
+    display: flex;
+    padding: 10px;
+
+}
+
+.opciones{
+    background-color: #f8ad9d ;
+    overflow: hidden; /*las opciones se queden adentro*/
+    color: black; 
+    justify-content: center; /*para centrar*/
+    position: relative;
+    font-optical-sizing: auto;
+    font-family: "Bodoni Moda SC", serif; /*rgb(220, 190, 123) */
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-style: normal;
+    display: flex;
+    
+}
+
+.opciones a{
+    color: black;
+    padding: 15px;
+    text-decoration: none;/*quitarle la línea*/
+    text-align: center;
+    transition: 0.3s;
+}
+
+.opciones a:hover{ /*para poner color oscuro cuando estoy en él*/
+    background-color: #f4978e;
+}
+
+.primeros{
+    display: flex;
+    justify-content: center; /*centrar horizontalmente*/
+    gap: 10px; /*espacio entre imagenes*/
+}
+
+.primeros img{
+    width: 22%;
+    height: auto;
+    padding-top: 10px;
+}

@@ -1,0 +1,46 @@
+/*
+ * Estilos para tablas y formularios
+ * Diseño estructurado para datos y entradas de usuario
+ */
+
+/* Fondo de color lila claro */
+body {
+    background-color: rgb(214, 188, 221);
+}
+
+/* Estilo para tablas: ancho y colapso de bordes */
+table {
+    width: 70%;
+    border-collapse: collapse;
+}
+
+/* Estilo para celdas de tabla */
+th, td {
+    padding: 10px;
+    border: 1px solid #c18bc3;
+    text-align: left;
+}
+
+/* Estilo especial para encabezados de tabla */
+th {
+    background-color: #85257d;
+    color: white;
+}
+
+/* Estilo para formularios: diseño en columna */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/* Estilo para inputs de formulario */
+form input {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #c18bc3;
+    border-radius: 4px;
+}

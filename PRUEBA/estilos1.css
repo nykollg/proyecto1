@@ -1,0 +1,19 @@
+/*
+ * Hoja de estilos alternativa
+ * Define colores de fondo y texto básicos
+ */
+
+/* Fondo de color lila suave */
+body {
+    background-color: rgb(157, 155, 227);
+}
+
+/* Color azul oscuro para títulos h1 */
+h1 {
+    color: rgb(16, 16, 123);
+}
+
+/* Color azul medio para párrafos */
+p {
+    color: rgb(52, 52, 173);
+}

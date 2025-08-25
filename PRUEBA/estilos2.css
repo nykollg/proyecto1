@@ -1,0 +1,66 @@
+/*
+ * Estilos para páginas de contacto y productos
+ * Incluye animaciones y diseño responsivo
+ */
+
+/* Fondo de color azul claro */
+body {
+    background-color: rgb(155, 198, 200);
+}
+
+/* Animación de movimiento al pasar el cursor sobre h1 */
+h1:hover {
+    color: rgb(17, 115, 119);
+    background-color: rgb(114, 180, 182);
+    animation: mover 3s;
+}
+
+/* Definición de la animación mover */
+@keyframes mover {
+    0% { transform: translateX(0); }
+    50% { transform: translateY(50px); }
+    100% { transform: translateX(100px); }
+}
+
+/* Color para párrafos */
+p {
+    color: rgb(45, 128, 131);
+}
+
+/* Animación de rotación para elemento con ID mitad */
+#mitad:hover {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 5px;
+    border: 10px double rgb(27, 72, 111);
+    animation: girar 3s;
+}
+
+/* Definición de la animación girar */
+@keyframes girar {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(50deg); }
+    100% { transform: rotate(100deg); }
+}
+
+/* Media query para diseño responsivo en pantallas pequeñas */
+@media (max-width: 600px) {
+    .contenedor {
+        flex-direction: column;
+        width: 80%;
+    }
+}
+
+/* Contenedor de cuadrícula para productos */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+/* Elementos de la cuadrícula */
+.grid-item {
+    background-color: rgb(123, 173, 199);
+    padding: 20px;
+}

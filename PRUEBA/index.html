@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Preconexión para mejorar rendimiento de carga de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Importación de fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página Web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Sección de video embebido de YouTube -->
+    <div class="video">
+        <h2>Video Destacado</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hXKKuq_D0ss?si=5hn71RW4gVm0o0nK" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Sección de mapa embebido de Google Maps -->
+    <div class="mapa">
+        <h2>Nuestra Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31673.143323997687!2d-73.12093405!3d7.109431399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683fda29de85d9%3A0x307c520ff61a2c2a!2sHomecenter%20(45th%20Street)!5e0!3m2!1sen!2sco!4v1755876707655!5m2!1sen!2sco" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <!-- Contenido principal de la página -->
+    <div>
+        <!-- Caja contenedora de títulos -->
+        <div class="caja"> 
+            <h1>Mi Primer Título con Bodoni Moda SC</h1>
+            <h2>Mi Segundo Título</h2>
+            <h3 class="primaria">Mi Tercer Título</h3>
+        </div>
+        
+        <h4 class="primaria">Mi Cuarto Título</h4>
+
+        <div id="primer">
+            <h5 class="primaria">Mi Quinto Título</h5>
+        </div>
+        
+        <h6 class="primaria">Mi Sexto Título</h6>
+        
+        <!-- Párrafo de ejemplo -->
+        <p>Nuestro primer párrafo de ejemplo en la página principal.</p>
+        
+        <!-- Imagen de ejemplo -->
+        <img src="photo.jpg" alt="Imagen de ejemplo" width="300" />
+        
+        <!-- Contenedor de enlaces de navegación -->
+        <div class="contenedor">
+            <a href="productos.html">Productos</a>
+            
+            <div class="caja1">
+                <a href="contactenos.html">Contáctenos</a>
+            </div>
+            
+            <div class="caja2">
+                <a href="contactenos.html" target="_blank" rel="noopener noreferrer">Contáctenos (nueva ventana)</a>
+            </div>
+        </div>
+        
+        <!-- Canvas para gráficos -->
+        <canvas id="miCanvas" width="200" height="100"></canvas>
+
+        <!-- Script para dibujar en el canvas -->
+        <script>
+            const canvas = document.getElementById("miCanvas");
+            const ctx = canvas.getContext("2d");
+            ctx.fillStyle = "blue";
+            ctx.fillRect(10, 10, 150, 80);
+        </script>
+    </div>
+</body>
+</html>
