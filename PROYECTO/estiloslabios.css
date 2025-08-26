@@ -8,18 +8,48 @@
     font-style: normal;
     display: flex; /*poner texto e imagen al lado*/
     justify-content: center; /*poner centrado*/
+    align-items: center;
 }
 
 #logo{
     max-width: 15%;
     height: 15%;
     display: flex;
-    padding: 10px;
+    padding: 15px;
 }
+
+.opciones{
+    background-color: #f8ad9d ;
+    overflow: hidden; /*las opciones se queden adentro*/
+    color: black; 
+    justify-content: center; /*para centrar*/
+    position: relative;
+    font-optical-sizing: auto;
+    font-family: "Bodoni Moda SC", serif; /*rgb(220, 190, 123) */
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-style: normal;
+    display: flex;
+    
+}
+
+.opciones a{
+    color: black;
+    padding: 15px;
+    text-decoration: none;/*quitarle la línea*/
+    text-align: center;
+    transition: 0.3s;
+}
+
+.opciones a:hover{ /*para poner color oscuro cuando estoy en él*/
+    background-color: #f4978e;
+}
+
+
 
 .productos{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
     justify-items: center;
@@ -51,4 +81,30 @@
   font-weight: bold;
   color: #F08080;
   padding-top: 0.5px;
+}
+
+.piedepagina {
+  display: flex;
+  justify-content: space-between; /* separa las dos columnas */
+  align-items: flex-start; /* alinea títulos en la misma altura */
+  padding: 20px;
+}
+
+.contactanosf, .quienessomos {
+  width: 45%; /* cada bloque ocupa casi la mitad */
+}
+
+.titulo-subrayado {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #f4978e;
+  margin-bottom: 10px; /* espacio con lo de abajo */
+}
+
+.redes img {
+  width: 40px;  /* tamaño uniforme */
+  margin-right: 10px;
+  margin-top: 10px;
 }

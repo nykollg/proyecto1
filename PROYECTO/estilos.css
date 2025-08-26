@@ -8,13 +8,14 @@
     font-style: normal;
     display: flex; /*poner texto e imagen al lado*/
     justify-content: center; /*poner centrado*/
+    align-items: center;
 }
 
 #logo{
     max-width: 15%;
     height: 15%;
     display: flex;
-    padding: 10px;
+    padding: 15px;
 }
 
 .opciones{
@@ -78,16 +79,28 @@
   margin-top: 0.5px;; /*poner mas cerca al título*/
 }
 
-#contactanos{
-  font-family: "Inter";
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center;
-  display: inline-block; /* para que la línea se ajuste al texto */
-  border-bottom: 3px solid #f4978e; /* color y grosor de la línea */
-  padding-bottom: 2px; /* separación entre texto y línea */
+.piedepagina {
+  display: flex;
+  justify-content: space-between; /* separa las dos columnas */
+  align-items: flex-start; /* alinea títulos en la misma altura */
+  padding: 20px;
 }
 
-#contactanos-container {
-  text-align: center; /* contenedor padre */
+.contactanosf, .quienessomos {
+  width: 45%; /* cada bloque ocupa casi la mitad */
+}
+
+.titulo-subrayado {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #f4978e;
+  margin-bottom: 10px; /* espacio con lo de abajo */
+}
+
+.redes img {
+  width: 40px;  /* tamaño uniforme */
+  margin-right: 10px;
+  margin-top: 10px;
 }
