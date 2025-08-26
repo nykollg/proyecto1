@@ -8,7 +8,13 @@
     font-style: normal;
     display: flex; /*poner texto e imagen al lado*/
     justify-content: center; /*poner centrado*/
+}
 
+#logo{
+    max-width: 15%;
+    height: 15%;
+    display: flex;
+    padding: 10px;
 }
 
 .productos{
@@ -25,16 +31,24 @@
 }
 
 .item img{
-    width: 100%;
+    width: 200px;
+    height: 200px;
     max-width: 200px;
+    object-fit: cover;
     border-radius: 8px;
     display: block;
     margin: 0 auto;
     
 }
 
+.nombre{
+    margin: 8px 0 4px;
+    margin-bottom: 0.5px;
+}
+
 .precio {
   font-size: 18px;
   font-weight: bold;
-  color: #F08080;
+  color: #F08080;
+  padding-top: 0.5px;
 }
