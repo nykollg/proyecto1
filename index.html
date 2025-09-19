@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Maquillaje - Le Cape</title>
+    <link rel="icon" type="image/png" href="LC.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+</head>
+
+<body>
+    <div class="encabezado">
+        <h1>LE CAPE </h1>
+        <img id="logo" src="LC.png" alt="lecape">
+    </div>
+
+
+<!-- The navigation menu -->
+<div class="navbar">
+  <a href="index.html">Inicio</a>
+  <div class="subnav">
+    <button class="subnavbtn">Rostro <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="rostro.html">Iluminadores</a>
+      <a href="rostro.html">Bases</a>
+      <a href="rostro.html">Rubores</a>
+
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Ojos <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="ojos.html">Pestañina</a>
+      <a href="ojos.html">Lapiz</a>
+      <a href="ojos.html">Delineador</a>
+      <a href="ojos.html">Sombra</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Labios <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="labios.html">Brillos</a>
+      <a href="labios.html">Labiales</a>
+      <a href="labios.html">Lapices</a>
+      <a href="labios.html">Tintas</a>
+      
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Skincare <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="skincare.html">Jabones</a>
+      <a href="skincare.html">Cremas</a>
+      <a href="skincare.html">Serum</a>
+      <a href="skincare.html">Balsamos</a>
+    </div>
+  </div>
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Buscar producto...">
+    <button onclick="buscar()">🔍</button>
+  </div>
+</div>
+
+
+    
+
+    <div class="wrapper">
+        <div class="slider" id="slider">
+          <ul class="slides">
+            <li class="slide" id="slide1">
+              <a href="#">
+                
+                <img src="sunsetglamsamy.png" alt="sunsetglamsamy">
+              </a>
+            </li>
+            <li class="slide" id="slide2">
+              <a href="#">
+               <img src="trendybarbie.png" alt="trendybarbie">
+              </a>
+            </li>
+            <li class="slide" id="slide3">
+              <a href="#">
+                <img src="trendycoleccionnueva.png" alt="trendycoleccionnueva">
+              </a>
+            </li>
+            <li class="slide" id="slide4">
+              <a href="#">
+                
+                <img src="brillibrillipurpure.png" alt="brillibrillipurpure">
+              </a>
+            </li>
+            <li class="slide" id="slide5">
+              <a href="#"> 
+                 <img src="purpurenuevo.png" alt="purpurenuevo">
+              </a>
+            </li>
+            <li class="slide">
+              <a href="#">
+                
+                <img src="photo6.jpg" alt="photo 1">
+              </a>
+            </li>
+          </ul>
+       
+            <ul class="slider-controler">
+                <li><a href="#slide1">&bullet;</a></li>
+                <li><a href="#slide2">&bullet;</a></li>
+                <li><a href="#slide3">&bullet;</a></li>
+                <li><a href="#slide4">&bullet;</a></li>
+                <li><a href="#slide5">&bullet;</a></li>
+            </ul>
+        </div>
+    </div> 
+
+     <!-- Botón del carrito -->
+    <button id="cart-button" class="cart-button">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span id="cart-count">0</span>
+    </button>
+
+    <div id="productos" class="grid">
+        <div class="item">
+            <img src="blushanik.jpg" alt="Blush Anik">
+            <p class="nombre">Blush Anik</p>
+            <p class="precio">$27.000</p>
+            <button class="add-to-cart">Agregar</button>
+        </div>
+
+        <div class="item">
+            <img src="blushengol.jpg" alt="Blush Engol">
+            <p class="nombre">Blush Engol</p>
+            <p class="precio">$25.000</p>
+            <button class="add-to-cart">Agregar</button>
+
+        </div>
+
+        <div class="item">
+            <img src="correctormiss.jpg" alt="Corrector Miss">
+            <p class="nombre">Corrector Miss</p>
+            <p class="precio">$24.000</p>
+            <button class="add-to-cart">Agregar</button>
+
+        </div>
+
+        <div class="item">
+            <img src="rubortrendystar.jpg" alt="Rubor Trendy Star">
+            <p class="nombre">Rubor Trendy Star</p>
+            <p class="precio">$20.000</p>
+            <button class="add-to-cart">Agregar</button>
+
+        </div>
+
+        <div class="item">
+            <img src="auratrendy.png" alt="Gloss Aura Trendy">
+            <h4 class="nombre">Gloss Aura (Trendy)</h4>
+            <h5 class="precio">$20.000</h5>
+            <button class="add-to-cart">Agregar</button>
+
+        </div>
+        <div class="item">
+            <img src="comfortlipmontoc.png" alt="Comfort Lip Montoc">
+            <h4 class="nombre">Comfort Lip (Montoc)</h4>
+            <h5 class="precio">$28.000</h5>
+            <button class="add-to-cart">Agregar</button>
+
+        </div>
+        <div class="item">
+            <img src="juicylipsengol.png" alt="Juicy Lips Engol">
+            <h4 class="nombre">Juicy Lips (Engol)</h4>
+            <h5 class="precio">$6.000</h5>
+            <button class="add-to-cart">Agregar</button>
+
+        </div>
+        <div class="item">
+            <img src="glossmissaloevera.png" alt="Gloss Aloe Vera Miss">
+            <h4 class="nombre">Gloss Aloe Vera (Miss)</h4>
+            <h5 class="precio">$10.000</h5>
+            <button class="add-to-cart">Agregar</button>
+
+        </div>
+        <div class="item">
+            <img src="Lip-Gloss-Bonita-Anik.webp" alt="Lip Gloss Bonita Anik">
+            <h4 class="nombre">Lip Gloss Bonita (Anik)</h4>
+            <h5 class="precio">$21.000</h5>
+            <button class="add-to-cart">Agregar</button>
+
+        </div>
+        <div class="item">
+            <img src="coton candy trendy.webp" alt="Cotton Candy Trendy">
+            <h4 class="nombre"> Brillo Cotton Candy (Trendy)</h4>
+            <h5 class="precio">$15.000</h5>
+            <button class="add-to-cart">Agregar</button>
+
+        </div>
+        <div class="item">
+            <img src="bloom lip bloomshell.jpg" alt="Bloom Lip Essence">
+            <h4 class="nombre">Bloom Lip Essence (Bloomshell)</h4>
+            <h5 class="precio">$16.000</h5>
+            <button class="add-to-cart">Agregar</button>
+
+        </div>
+        <div class="item">
+            <img src="Lip-Balm-Girly-color.webp" alt="Lip Balm Girly">
+            <h4 class="nombre">Lip Balm (Girly)</h4>
+            <h5 class="precio">$30.000</h5>
+            <button class="add-to-cart">Agregar</button>
+
+        </div>
+        <div class="item">
+            <img src="Lippie balm montoc.webp" alt="Lippie Balm Montoc">
+            <h4 class="nombre">Lippie Balm (Montoc)</h4>
+            <h5 class="precio">$14.000</h5>
+            <button class="add-to-cart">Agregar</button>
+
+        </div>
+        <div class="item">
+            <img src="Lippie-Cheeks-Montoc-Tinta-Labios-y-mejillas.webp" alt="Lippie Cheeks Montoc">
+            <h4 class="nombre">Lippie Cheeks (Montoc)</h4>
+            <h5 class="precio">$20.000</h5>
+            <button class="add-to-cart">Agregar</button>
+
+        </div>
+        <div class="item">
+            <img src="Lapiz de labios montoc.jpg" alt="Lapiz de labios Montoc">
+            <h4 class="nombre">Lapiz de labios (Montoc)</h4>
+            <h5 class="precio">$13.000</h5>
+            <button class="add-to-cart">Agregar</button>
+
+        </div>
+        <div class="item">
+            <img src="Lapiz-delineador-labios-bloomshell-signature.webp" alt="Lapiz de labios Signature Bloomshell">
+            <h4 class="nombre">Lapiz de labios Signature (Bloomshell)</h4>
+            <h5 class="precio">$10.000</h5>
+            <button class="add-to-cart">Agregar</button>
+
+        </div>
+
+    </div>
+
+   <!-- Fondo oscuro -->
+  <div id="cart-backdrop" class="cart-backdrop"></div>
+
+  <!-- Panel carrito -->
+  <aside id="cart" class="cart">
+    <div class="cart-header">
+      <h2>Tu carrito</h2>
+      <button id="cart-close">✕</button>
+    </div>
+    <ul id="cart-list"></ul>
+    <div class="cart-footer">
+      <p>Total: <span id="cart-total">$0</span></p>
+      <button id="checkout">Finalizar compra</button>
+    </div>
+  </aside>
+
+
+    <footer class="footer">
+  <div class="footer-section">
+    <h3>Contáctanos</h3>
+    <hr>
+    <div class="social-icons">
+      <img src="logowhatsapp.jpg" alt="logowhatsapp">
+      <img src="logoinstagram.png" alt="Instagram">
+    </div>
+  </div>
+
+  <div class="footer-section">
+    <h3>Quiénes somos</h3>
+    <hr>
+    <p>Somos una tienda virtual que ofrece marcas de maquillaje y de skincare.</p>
+  </div>
+    </footer>
+
+
+
+
+<script src="index.js"></script>
+</body>
+
+</html>
